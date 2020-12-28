@@ -66,7 +66,14 @@ startTime = time.time()
  
 # 100 threads took 172 seconds
 # 200 threads took 87 seconds   
-for x in range(200):
+try:
+    numberOfThreads = int(input('Thread number : '))
+except:
+    numberOfThreads = 200
+    print('Using default threat number :', numberOfThreads)
+    pass
+
+for x in range(numberOfThreads):
     # thread id
     t = threading.Thread(target = threader)
     
