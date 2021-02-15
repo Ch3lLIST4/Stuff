@@ -22,7 +22,7 @@ public class DBUtils implements Serializable {
             //2. Create Connection String
             String url ="jdbc:sqlserver://localhost:1433;databaseName=Project1;instanceName=MSSQLSERVER";
             //3. Open connection
-            conn = DriverManager.getConnection(url, "sa", "KawaiiNeko1@#");            
+            conn = DriverManager.getConnection(url, "sa", "KawaiiNeko1@#"); // I use this password for my bank account
         } catch (Exception e) {
         }
         return conn;
