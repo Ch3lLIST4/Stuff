@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+        <link href="./CSS/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="login-box">
+            <h1>Login</h1>
+            
+                <form action="DispatchServlet" method="POST">
+                    <div class="textbox">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Username <input type="text" placeholder="Username" name="txtUserID" value="" /><br/>
+                    </div>
+                    <div class="textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        Password <input type="password" placeholder="Password" name="txtPassword" value="" /><br/>
+                    </div>
+                    <input type="submit" value="Login" name="btnAction" />
+                    <input type="reset" value="Reset" />
+                </form><br/>
+                <a href="createNewAccount.jsp">Click here to Sign Up</a>
+            
+        </div>
+    </body>
+</html>
